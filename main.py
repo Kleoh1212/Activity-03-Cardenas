@@ -30,7 +30,7 @@ def main():
     
     Level= int(input(" Input Level: "))
     trap1=1 
-    nature_input = int(input("1. beneficial or 2. Hindering": ))
+    nature_input = int(input("1. beneficial or 2. Hindering:" ))
     if nature_input==1:
         nature = 1.1
     else:
