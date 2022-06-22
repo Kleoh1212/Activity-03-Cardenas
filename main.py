@@ -19,6 +19,7 @@ def main():
             trap1=0
         else:
             print("wrong input")
+   
     trap = 1
 
     while trap1 ==1:
@@ -29,6 +30,7 @@ def main():
             print("Wrong input")
     
     Level= int(input(" Input Level: "))
+   
     trap1=1 
     nature_input = int(input("1. beneficial or 2. Hindering:" ))
     if nature_input==1:
@@ -38,7 +40,7 @@ def main():
 
     select = int(input("1. Stat or 2. EV: "))
     if select ==1:
-        hp = statsc.pokestats.statReturnHP(base1,iv,Level)
+        hp = statsc.pokestats.statReturnHP(base1,iv,ev,Level)
         otherstat =statsc.pokestats.startReturnOtherStat(base1,iv,ev,Level,nature)
         print("HP: ", hp)
         print("Other Stats: ", otherstat)
@@ -54,6 +56,7 @@ def main():
 
     else:
         print("Wrong Input!: ")
+        
 main()
 
 
